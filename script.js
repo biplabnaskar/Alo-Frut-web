@@ -86,8 +86,6 @@ timeline2.from("#mix-berri",{
      top:"-6%"
 },'alo-frut1');
 
-
-
 timeline.to("#or-btl",{
     top:"115%",
     left:"9%",
