@@ -1,0 +1,256 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 10vw;
+    z-index: 50;
+}
+
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+
+}
+
+.right-Nav{
+    display: flex;
+    gap: 3vw;
+    padding-right: 8vw;
+}
+
+.one{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(120deg,rgb(245, 96, 4),rgb(182, 133, 44),rgb(200, 193, 53));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#or-btl{
+    position: absolute;
+    width: 30%;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#orange-cut{
+    position: absolute;
+    top:10%;
+    left: 37%;
+    width: 15%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    
+}
+
+#orange-full{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    width: 20%;
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#leaf-pic{
+    top: 15%;
+    left: 18%;
+    transform: rotate(-75deg);
+    position: absolute;
+    width: 13%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#splash{
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    left: 15%;
+    
+     transform: rotate(40deg);
+}
+
+#home-title{
+    z-index: 2;
+    font-size: 25vw;
+    color: aliceblue;
+
+}
+
+.two{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left-two,.right-two{
+     
+    width: 50%;
+    height: 100%;
+     background-color: #41116e;
+     gap: 3vh;
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+     flex-direction: column;
+     color: aliceblue;
+}
+
+.left-two svg{
+     transform: rotate(-20deg);
+     width: 90%;
+     margin-top: 50vh;
+}
+
+.right-two h1{
+    font-size: 5vw;
+    color: orange;
+    z-index: 4;
+}
+
+.right-two p{
+    font-size: 1rem;
+    text-align: justify;
+    width: 80%;
+    z-index: 4;
+}
+
+.three{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(120deg,rgb(245, 96, 4),rgb(182, 133, 44),rgb(200, 193, 53));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+     
+
+}
+
+.card
+{   
+    position: relative;
+    width: 25vw;
+    height: 70vh;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.card h1{
+    font-size: 2vw;
+    margin-top: 50vh;
+}
+
+.card button{
+    font-size: 1vw;
+    border-radius: 50px;
+    padding: 1vw 2vw;
+    border: none;
+    background-color: rgb(232, 162, 32);
+    color: white;
+}
+
+.card:nth-child(1){
+    background-color: #ACE1AF;
+}
+
+.card:nth-child(2){
+    background-color: #FFE5B4;
+}
+
+.card:nth-child(3){
+    background-color: #fac0bf;
+} 
+ 
+
+#kiwi-btl{
+    position: absolute;
+    top: -10%;
+    left: -4%;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#berri-btl{
+    position: absolute;
+    top: -12%;
+    width: 115%;
+    left: -8%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#kiwi-frt{
+    position: absolute;
+    bottom: 75%;
+    left: -10%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+} 
+
+#kiwi2{
+    position: absolute;
+    width: 70%;
+    z-index: 0;
+    left: 38%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#mix-berri{
+    position: absolute;
+    width: 100%;
+    transform: rotate(-3deg);
+    top: -5.3%;
+    left:6%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+     
+}
+
+
+#desktop-warning {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fix the position relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the element's size */
+    text-align: center; /* Center the text horizontally */
+    color: red; /* Red text color */
+    font-size: 24px; /* Adjust font size as needed */
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+
+
+
+ 
